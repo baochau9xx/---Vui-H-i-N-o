@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="#e8fffd"
+    android:layout_height="match_parent">
+    
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="NHạc nền  "
+        android:textColor="#0068ff"
+        android:textSize="30sp"
+        android:fontFamily="@font/font_07"
+        android:textOff="Tắt"
+        android:textOn="Mở"
+        android:id="@+id/switch_nhacnen"
+        android:textAllCaps="true"
+        android:thumb="@drawable/switch_audio"
+        app:track="@drawable/switch_track"
+        app:showText="true"
+        />
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hiệu ứng  "
+        android:textSize="30sp"
+        android:fontFamily="@font/font_07"
+        android:layout_marginTop="20dp"
+        android:textOff="Tắt"
+        android:textOn="Mở"
+        android:textColor="#0068ff"
+        android:id="@+id/switch_hieuung"
+        android:layout_below="@+id/switch_nhacnen"
+        android:textAllCaps="true"
+        android:thumb="@drawable/switch_audio"
+        app:track="@drawable/switch_track"
+        app:showText="true"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="7dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/btn_save"
+        android:layout_below="@+id/switch_hieuung"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Lưu lại"
+        android:textColor="#fff"
+        android:fontFamily="@font/font_07"
+        android:background="@drawable/custom_button"
+        android:textSize="30sp"
+        />
+    
+</RelativeLayout>
